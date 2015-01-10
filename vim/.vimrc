@@ -1,5 +1,6 @@
 " set line numbers
 set nu
+set clipboard=unnamed
 
 " map keys
 " map open nerdtree shortcut tree
