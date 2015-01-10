@@ -51,3 +51,12 @@ set rtp+={/Users/som/Library/Fonts}/powerline/bindings/vim
 " run php
 :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 
+" autocomplete in vim
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags " for HTML
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP " for PHP
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS " for javascript
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS " for CSS
+" for Python
+if has("autocmd")
+        autocmd FileType python set complete+=k/home/shakir/.vim/pydiction-0.5/pydiction isk+=.,(
+endif " has("autocmd"
