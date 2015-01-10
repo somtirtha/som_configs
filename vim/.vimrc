@@ -14,7 +14,7 @@ autocmd VimResized * wincmd =
 " pathogen execute command
 execute pathogen#infect()
 syntax on
-filetype pluginindent on
+filetype plugin indent on
 
 " to enable the mouse reporting for all modes
 if has("mouse")
@@ -39,7 +39,11 @@ set laststatus=2
 
 " automatically show all buffers when only one tab open
 let g:airline#extensions#tabline#enabled = 1
-"
+
+" customize airline tabline
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '>'
+
 " add plugin for poweline to vim
 set rtp+={/Users/som/Library/Fonts}/powerline/bindings/vim
 
